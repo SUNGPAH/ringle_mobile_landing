@@ -1,0 +1,54 @@
+.main {
+    object-fit: contain;
+    width: 100%;
+    text-align: center;
+
+    &-first {
+        height: 55.5rem;
+        color: $color-white;
+        text-shadow: 0 2px 2px rgba($color-black, 0.5);
+        background-image: url(../img/img-1.png);
+    }
+
+    &-second {
+        height: 50rem;
+        color: $color-grey-dark;
+        background-image: url(../img/img-2.png);
+    }
+
+    &-third {
+        height: 50rem;
+        color: $color-grey-dark;
+        background-image: url(../img/img-3.png);
+    }
+
+    &-fourth {
+        height: 50rem;
+        color: $color-grey-dark;
+        background-image: url(../img/img-4.png);
+    }
+
+    &-fifth {
+        height: 50rem;
+        color: $color-grey-dark;
+        background-image: url(../img/img-5.png);
+    }
+
+    &-sixth {
+        height: 50rem;
+        color: $color-grey-dark;
+        background-image: url(../img/img-6.png);
+    }
+
+    &-seventh {
+        height: 20rem;
+    }
+
+    &__logo-kakao {
+        width: 2.6rem;
+        height: 2.4rem;
+        object-fit: contain;
+        background-image: url(../img/kakao-icon.png);
+        float: left;
+    }
+}

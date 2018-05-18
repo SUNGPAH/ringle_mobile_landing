@@ -1,0 +1,60 @@
+.main {
+    
+    &__btn-more {
+        font-size: $font-size-small;
+        opacity: 0.7;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: $color-white;
+    }
+
+    &__btn-contact {
+        width: 18.7rem;
+        height: 4.2rem;
+        border-radius: 2.1rem;
+        background-color: #fae102;
+        clear: both;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.footer {
+
+    &__btn-apply {
+        font-family: KoPubDotumPM;
+        width: 50%;
+        height: 6.5rem;
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $color-white;
+        font-size: $font-size-medium;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        letter-spacing: normal;
+        text-align: center;
+        line-height: normal;
+        margin-top: 2.4rem;
+    }
+}
+
+.btn {
+    &-blue {
+        background-color: $color-blue;
+    }
+
+    &-purple {
+        background-color: $color-purple;
+    }
+}
