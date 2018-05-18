@@ -1,0 +1,202 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 55.5%; }
+
+body {
+  font-family: AppleSDGothicNeo; }
+
+.main__title {
+  font-family: AppleSDGothicNeo;
+  font-size: 3.2rem;
+  font-weight: 600;
+  font-style: normal;
+  line-height: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  margin-bottom: 1rem;
+  padding-top: 4.5rem; }
+
+.main__contents {
+  font-family: AppleSDGothicNeo;
+  font-size: 1.8rem;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.22;
+  font-stretch: normal;
+  letter-spacing: normal;
+  margin-bottom: 1.5rem; }
+
+.main__text-contact {
+  font-family: AppleSDGothicNeo;
+  width: 8.8rem;
+  height: 2rem;
+  color: #3e2324;
+  font-size: 1.8rem;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  float: left;
+  margin-left: 0.5rem; }
+
+.main__btn-more {
+  font-size: 1.4rem;
+  opacity: 0.7;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #fff; }
+
+.main__btn-contact {
+  width: 18.7rem;
+  height: 4.2rem;
+  border-radius: 2.1rem;
+  background-color: #fae102;
+  clear: both;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); }
+
+.footer__btn-apply {
+  font-family: KoPubDotumPM;
+  width: 50%;
+  height: 6.5rem;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: center;
+  line-height: normal;
+  margin-top: 2.4rem; }
+
+.btn-blue {
+  background-color: #5878d9; }
+
+.btn-purple {
+  background-color: #785be7; }
+
+.footer {
+  height: 35rem;
+  text-align: left;
+  background-color: #f2f2f2;
+  padding-top: 1.6rem; }
+  .footer__text-menu {
+    color: #272727;
+    font-size: 1rem;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    margin-left: 1.6rem; }
+  .footer__hr {
+    margin: 1rem 1.6rem;
+    color: #d6d6d6; }
+  .footer__bottom {
+    clear: both; }
+  .footer__ringle-info {
+    color: #6a6a6a;
+    font-size: 1rem;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.44;
+    letter-spacing: normal;
+    margin-left: 1.6rem;
+    margin-top: 3rem;
+    float: left; }
+  .footer__logo-box {
+    float: right;
+    margin-right: 3rem;
+    margin-top: 7.5rem; }
+  .footer__logo-store {
+    width: 4rem;
+    height: 4rem;
+    object-fit: contain; }
+  .footer__btn-box {
+    height: 6.5rem;
+    clear: both; }
+
+.header {
+  width: 100%;
+  height: 9.5rem;
+  padding: 1rem 1.5rem;
+  display: flex;
+  float: left;
+  justify-content: space-between;
+  background-image: linear-gradient(to bottm, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); }
+  .header__menu {
+    width: 2.9rem;
+    height: 2.9rem;
+    object-fit: contain; }
+  .header__logo {
+    width: 4.5rem;
+    height: 3.3rem;
+    object-fit: contain; }
+  .header__login {
+    width: 6.6rem;
+    height: 2.7rem;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: normal; }
+
+.main {
+  object-fit: contain;
+  width: 100%;
+  text-align: center; }
+  .main-first {
+    height: 55.5rem;
+    color: #fff;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+    background-image: url(../img/img-1.png); }
+  .main-second {
+    height: 50rem;
+    color: #272727;
+    background-image: url(../img/img-2.png); }
+  .main-third {
+    height: 50rem;
+    color: #272727;
+    background-image: url(../img/img-3.png); }
+  .main-fourth {
+    height: 50rem;
+    color: #272727;
+    background-image: url(../img/img-4.png); }
+  .main-fifth {
+    height: 50rem;
+    color: #272727;
+    background-image: url(../img/img-5.png); }
+  .main-sixth {
+    height: 50rem;
+    color: #272727;
+    background-image: url(../img/img-6.png); }
+  .main-seventh {
+    height: 20rem; }
+  .main__logo-kakao {
+    width: 2.6rem;
+    height: 2.4rem;
+    object-fit: contain;
+    background-image: url(../img/kakao-icon.png);
+    float: left; }
