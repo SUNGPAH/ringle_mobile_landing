@@ -5,38 +5,31 @@
 
     &-first {
         height: 55.5rem;
-        color: $color-white;
-        text-shadow: 0 2px 2px rgba($color-black, 0.5);
         background-image: url(../img/img-1.png);
     }
 
     &-second {
         height: 50rem;
-        color: $color-grey-dark;
         background-image: url(../img/img-2.png);
     }
 
     &-third {
         height: 50rem;
-        color: $color-grey-dark;
         background-image: url(../img/img-3.png);
     }
 
     &-fourth {
         height: 50rem;
-        color: $color-grey-dark;
         background-image: url(../img/img-4.png);
     }
 
     &-fifth {
         height: 50rem;
-        color: $color-grey-dark;
         background-image: url(../img/img-5.png);
     }
 
     &-sixth {
         height: 50rem;
-        color: $color-grey-dark;
         background-image: url(../img/img-6.png);
     }
 
@@ -51,4 +44,88 @@
         background-image: url(../img/kakao-icon.png);
         float: left;
     }
+
+    &__logo-ringle {
+        width: 3rem;
+        height: 2.2rem;
+        object-fit: contain;
+        background-image: url(../img/logo-text-white.png);
+        float: left;
+    }
+
+    &-landing {
+        height: 55rem;
+        background-image: url(../img/img-main-whatis.png);
+    }
+
+    &__grey-box {
+        background-color: #f7f6f7;
+        height: 53rem;
+        margin-top: 4rem;
+    }
+
+    &__inquiry-box {
+        height: 20rem;
+    }
+
+    &__video-box {
+        width: 32.5rem;
+        height: 22.5rem;
+        background-color: $color-white;
+        margin-top: 2rem;
+    }
+
+    &__scroll-box {
+        width: 100%;
+        height: auto;
+        display: flex;
+        overflow-x: scroll;
+    }
+
+    &-tutor {
+        height: 55rem;
+        background-image: url(../img/img-main-tutor.png);
+    }
+
+    &__big-box {
+        height: 123.6rem;
+    }
+}
+
+.icon-video-play {
+    width: 1.2rem;
+    height: 1.3rem;
+    object-fit: contain;
+    background-image: url(../img/ic-video-play.png);
+    float: left;
+    margin-left: 0.3rem;
+    margin-top: 0.5rem;
+}
+
+.text-book {
+
+    &-box {
+        width: 14.5rem;
+        height: auto;
+        padding: 1.5rem 0.5rem;
+
+        &:first-child {
+            margin-left: 2rem;
+        }
+    }
+
+    &-img {
+        width: 13.5rem;
+        height: 17.7rem;
+        position: relative;
+    }
+
+    &-first {
+        background-image: linear-gradient(rgba($color-black, 0.5), rgba($color-black, 0.5)), url(../img/img-4.png);
+    }
+}
+
+.review-hr {
+    margin: 1rem 3.5rem;
+    background-color: #dcdcdc;
 }
