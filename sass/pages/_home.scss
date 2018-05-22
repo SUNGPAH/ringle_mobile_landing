@@ -1,101 +1,118 @@
 .main {
-    object-fit: contain;
     width: 100%;
+    height: auto;
     text-align: center;
-
-    &-first {
-        height: 55.5rem;
-        background-image: url(../img/img-1.png);
-    }
-
-    &-second {
+    
+    & [class^='main-img-']:not(:first-child) {
         height: 50rem;
-        background-image: url(../img/img-2.png);
+    }
+    
+    & [class*='-first'] {
+        height: 55rem;
+        padding-top: 8rem;
     }
 
-    &-third {
-        height: 50rem;
-        background-image: url(../img/img-3.png);
-    }
-
-    &-fourth {
-        height: 50rem;
-        background-image: url(../img/img-4.png);
-    }
-
-    &-fifth {
-        height: 50rem;
-        background-image: url(../img/img-5.png);
-    }
-
-    &-sixth {
-        height: 50rem;
-        background-image: url(../img/img-6.png);
-    }
-
-    &-seventh {
-        height: 20rem;
+    &-img {
+        &-first {
+            background-image: url(../img/img-index-main.png);
+        }
+        &-second {
+            background-image: url(../img/img-index-tutor.png);
+        }
+    
+        &-third {
+            background-image: url(../img/img-index-topic.png);
+        }
+    
+        &-fourth {
+            background-image: url(../img/img-index-tutorial.png);
+        }
+    
+        &-fifth {
+            background-image: url(../img/img-index-review.png);
+        }
+    
+        &-sixth {
+            background-image: url(../img/img-index-price.png);
+        }
     }
 
     &__logo-kakao {
         width: 2.6rem;
         height: 2.4rem;
-        object-fit: contain;
-        background-image: url(../img/kakao-icon.png);
+        background-size: contain;
+        background-image: url(../img/ic-kakao.png);
         float: left;
     }
 
     &__logo-ringle {
         width: 3rem;
         height: 2.2rem;
-        object-fit: contain;
+        background-size: contain;
         background-image: url(../img/logo-text-white.png);
         float: left;
-    }
-
-    &-landing {
-        height: 55rem;
-        background-image: url(../img/img-main-whatis.png);
-    }
-
-    &__grey-box {
-        background-color: #f7f6f7;
-        height: 53rem;
-        margin-top: 4rem;
     }
 
     &__inquiry-box {
         height: 20rem;
     }
-
+    
     &__video-box {
-        width: 32.5rem;
+        width: 90%;
         height: 22.5rem;
-        background-color: $color-white;
         margin-top: 2rem;
+        margin-left: 2rem;
+        background-color: $color-white;
     }
-
+    
     &__scroll-box {
         width: 100%;
         height: auto;
         display: flex;
         overflow-x: scroll;
     }
-
-    &-tutor {
-        height: 55rem;
+    
+    &-landing-first {
+        background-image: url(../img/img-main-whatis.png);
+    }
+    
+    &-tutor-first {
         background-image: url(../img/img-main-tutor.png);
     }
 
-    &__big-box {
-        height: 123.6rem;
+    &-topic-first {
+        background-image: url(../img/img-main-topic.png);
     }
+
+    &-tutorial-first {
+        background-image: url(../img/img-main-guide.png);
+    }
+
+    &-review {
+        &-first {
+            background-image: url(../img/img-main-review.png);
+        }
+        
+        &-detail {
+            background-color: $color-purple;
+            height: 23rem;
+            padding-top: 8rem;
+            margin-bottom: 3rem;
+        }
+    }
+
+    &-price {
+        background-image: url(../img/img-main-price.png);
+        height: 30rem;
+        padding-top: 8rem;
+    }
+
 }
 
 .icon-video-play {
     width: 1.2rem;
     height: 1.3rem;
-    object-fit: contain;
+    background-size: contain;
     background-image: url(../img/ic-video-play.png);
     float: left;
     margin-left: 0.3rem;
@@ -120,12 +137,155 @@
         position: relative;
     }
 
-    &-first {
-        background-image: linear-gradient(rgba($color-black, 0.5), rgba($color-black, 0.5)), url(../img/img-4.png);
+    &-1 {
+        background-image: linear-gradient(rgba($color-black, 0.5), rgba($color-black, 0.5)), url(../img/img-index-tutorial.png);
     }
 }
 
-.review-hr {
-    margin: 1rem 3.5rem;
-    background-color: #dcdcdc;
+.review {
+    
+    &-hr {
+        margin: 1rem 3.5rem;
+        background-color: #dcdcdc;
+    }
+
+    &-box {
+        margin-top: 3.5rem;
+        text-align: left;
+    }
+}
+
+.faq-hr {
+    height: 0.2rem;
+    margin: 1.5rem 3.5rem;
+    background-color: #eaeaea;
+}
+
+.img {
+    
+    &-tutors {
+    height: auto;
+    clear: both;
+    display: inline-block;
+    text-align: center;
+    padding: 0 1.5rem;
+    
+        &-circle {
+            width: 9.5rem;
+            height: 9.5rem;
+            border-radius: 100%;
+            background-color: $color-img-tutors;
+            float: left;
+            margin: 1rem 1rem;
+        }
+    }
+
+    &-btn {
+        width: 100%;
+        height: 14rem;
+        margin-top: 1rem;
+        justify-content: flex-start;
+    
+        &-tutor {
+            background-image: url(../img/img-btn-tutor.png);
+        }
+    
+        &-topic {
+            background-image: url(../img/img-btn-topic.png);
+        }
+    
+        &-tutorial {
+            background-image: url(../img/img-btn-tutorial.png);
+        }
+    
+        &-review {
+            background-image: url(../img/img-btn-review.png);
+        }
+    
+        &-price {
+            background-image: url(../img/img-btn-price.png);
+            margin-bottom: 1rem;
+        }
+    }
+
+    &-review-circle {
+        width: 7.5rem;
+        height: 7.5rem;
+        border-radius: 100%;
+        float: left;
+        margin: 3rem 1rem 1rem 3rem;
+        background-color: $color-white;
+    }
+
+    &-partner-logo {
+        background-image: url(../img/img-logo.png);
+        width: 32rem;
+        height: 20rem;
+        margin: 2rem 0;
+        background-size: contain !important;
+    }
+}
+
+.tutor-video {
+    margin: 2rem 2.5rem 1rem 2.5rem;
+    height: auto;
+
+    &-box {
+        width: 100%;
+        height: 18.3rem;
+        background-color: $color-white;
+    }
+}
+
+.topic-book {
+    &-box {
+        width: 100%;
+        height: auto;
+        min-height: 22rem;
+        padding: 1rem 2rem;
+    }
+
+    &-size {
+        width: 45%;
+        height: 20rem;
+        float: left;
+        position: relative;
+        margin: 0.5rem;
+    }
+}
+
+.guide {
+    &-step {
+        &-1 {
+            background-image: url(../img/img-guide-step-1.png);
+        }
+
+        &-2 {
+            background-image: url(../img/img-guide-step-2.png);
+        }
+
+        &-3 {
+            background-image: url(../img/img-guide-step-3.png);
+        }
+
+        &-4 {
+            background-image: url(../img/img-guide-step-4.png);
+        }
+    }
+
+    &-img-arrow {
+        background-image: url(../img/graphic-guide-com.png);
+        float: left;
+        width: 4rem;
+        height: 25rem;
+        margin-left: 3rem;
+        margin-bottom: 4rem;
+    }
+}
+
+[class*='guide-step-'] {
+    width: 90%;
+    height: 22rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
 }

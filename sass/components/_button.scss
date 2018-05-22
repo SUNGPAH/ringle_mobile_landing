@@ -3,11 +3,6 @@
     &-more {
         font-size: $font-size-14;
         opacity: 0.7;
-        font-weight: normal;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: normal;
-        letter-spacing: normal;
         color: $color-white;
     }
 
@@ -17,9 +12,6 @@
         border-radius: 2.1rem;
         background-color: #fae102;
         clear: both;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         margin-top: 2rem;
         position: relative;
         left: 50%;
@@ -32,9 +24,6 @@
         border-radius: 2.55rem;
         background-color: rgba($color-white, 0.8);
         clear: both;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         position: relative;
         left: 50%;
         transform: translateX(-50%);
@@ -47,15 +36,10 @@
     &__btn-apply {
         font-family: KoPubDotumPM;
         width: 50%;
-        height: 6.5rem;
+        height: 100%;
         float: left;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         font-size: $font-size-18;
-        font-weight: normal;
         text-align: center;
-        line-height: normal;
     }
 }
 
@@ -69,34 +53,16 @@
         background-color: $color-purple;
         color: $color-white;
     }
-}
 
-.img-btn {
-    width: 100%;
-    height: 14rem;
-    object-fit: contain;
-    margin-top: 1rem;
-    display: flex;
-    align-items: center;
-
-    &-tutor {
-        background-image: url(../img/img-b-tutor.png);
-    }
-
-    &-topic {
-        background-image: url(../img/img-b-topic.png);
-    }
-
-    &-tutorial {
-        background-image: url(../img/img-b-tutorial.png);
-    }
-
-    &-review {
-        background-image: url(../img/img-b-review.png);
-    }
-
-    &-price {
-        background-image: url(../img/img-b-price.png);
-        margin-bottom: 1rem;
+    &-review-more {
+        width: 3rem;
+        height: 3rem;
+        background-size: contain;
+        display: flex;
+        position: relative;
+        top: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+        clear: both;
     }
 }
