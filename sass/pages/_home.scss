@@ -5,7 +5,9 @@
     
     &-welcome {
         height: calc(100vh - 10rem);
-        padding-top: 5.5rem;
+        min-height: 45rem;
+        padding-top: 15%;
+        padding-bottom: 7%;
     }
 
     & [class^='main-img-']:not(:first-child) {

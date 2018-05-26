@@ -92,16 +92,19 @@
         }
     }
     &_left {
-        margin-left: 1rem;
+        margin-left: 1.5rem;
 
-        &-small {
+        &-smaller {
             margin-left: 0.5rem;
         }
+        &-small {
+            margin-left: 1rem;
+        }
         &-big {
-            margin-left: 1.5rem;
+            margin-left: 2rem;
         }
         &-bigger {
-            margin-left: 2rem;
+            margin-left: 2.5rem;
         }
         &-biggest {
             margin-left: 4rem;
@@ -148,6 +151,9 @@
     &_bottom {
         padding-bottom: 4.5rem;
 
+        &-none {
+            padding-bottom: 0;
+        }
         &-smallest {
             padding-bottom: 0.5rem;
         }
@@ -165,19 +171,22 @@
         }
     }
     &_left {
-        padding-left: 1rem;
+        padding-left: 1.5rem;
 
         &-none {
             padding-left: 0;
         }
-        &-small {
+        &-smaller {
             padding-left: 0.5rem;
         }
+        &-small {
+            padding-left: 1rem;
+        }
         &-big {
-            padding-left: 1.5rem;
+            padding-left: 2rem;
         }
         &-bigger {
-            padding-left: 2rem;
+            padding-left: 2.5rem;
         }
         &-biggest {
             padding-left: 3.5rem;

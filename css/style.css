@@ -191,6 +191,17 @@ body {
   line-height: 1.56;
   color: #272727; }
 
+.text-faq-subject {
+  font-size: 1.3rem;
+  line-height: 1.77;
+  color: #868686; }
+
+.text-faq-question {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #4d4d4d; }
+
 .text-line-through {
   text-decoration: line-through; }
 
@@ -369,13 +380,15 @@ body {
     margin-bottom: 3.5rem; }
 
 .margin_left {
-  margin-left: 1rem; }
-  .margin_left-small {
+  margin-left: 1.5rem; }
+  .margin_left-smaller {
     margin-left: 0.5rem; }
+  .margin_left-small {
+    margin-left: 1rem; }
   .margin_left-big {
-    margin-left: 1.5rem; }
-  .margin_left-bigger {
     margin-left: 2rem; }
+  .margin_left-bigger {
+    margin-left: 2.5rem; }
   .margin_left-biggest {
     margin-left: 4rem; }
 
@@ -405,6 +418,8 @@ body {
 
 .padding_bottom {
   padding-bottom: 4.5rem; }
+  .padding_bottom-none {
+    padding-bottom: 0; }
   .padding_bottom-smallest {
     padding-bottom: 0.5rem; }
   .padding_bottom-smaller {
@@ -417,15 +432,17 @@ body {
     padding-bottom: 10rem; }
 
 .padding_left {
-  padding-left: 1rem; }
+  padding-left: 1.5rem; }
   .padding_left-none {
     padding-left: 0; }
-  .padding_left-small {
+  .padding_left-smaller {
     padding-left: 0.5rem; }
+  .padding_left-small {
+    padding-left: 1rem; }
   .padding_left-big {
-    padding-left: 1.5rem; }
-  .padding_left-bigger {
     padding-left: 2rem; }
+  .padding_left-bigger {
+    padding-left: 2.5rem; }
   .padding_left-biggest {
     padding-left: 3.5rem; }
 
@@ -534,7 +551,9 @@ footer {
   text-align: center; }
   .main-welcome {
     height: calc(100vh - 10rem);
-    padding-top: 5.5rem; }
+    min-height: 45rem;
+    padding-top: 15%;
+    padding-bottom: 7%; }
   .main [class^='main-img-']:not(:first-child) {
     height: 50rem; }
   .main [class*='-first'] {

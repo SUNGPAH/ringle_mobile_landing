@@ -203,6 +203,17 @@
             line-height: 1.56;
             color: $color-grey-dark;
         }
+        &-subject {
+            font-size: 1.3rem;
+            line-height: 1.77;
+            color: #868686;
+        }
+        &-question {
+            font-size: 1.5rem;
+            font-weight: 600;
+            line-height: 1.4;
+            color: #4d4d4d;
+        }
     }
     &-line-through {
         text-decoration: line-through;
