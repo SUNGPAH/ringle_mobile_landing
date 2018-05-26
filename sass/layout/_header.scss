@@ -3,26 +3,23 @@
     height: 9.5rem;
     padding: 3rem 1.5rem;
     position: fixed;
-    float: left;
     z-index: 5;
     justify-content: space-between;
     background-image: linear-gradient(to bottom, rgba($color-black, 0.5), rgba($color-black, 0));
 
     &-box {
         width: 100%;
-        min-height: 5.5rem;
-        height: 10vh;
+        height: 5.5rem;
         background-color: $color-white;
-        border: 1px solid $color-grey-light;
+        border-bottom: 1px solid $color-grey-light;
         padding: 1rem 1.5rem;
-        float: left;
         z-index: 5;
         justify-content: space-between;
-        margin-bottom: 4rem;
+        position: fixed;
     }
 
     &__menu {
-        width: 2.9rem;
+        width: 7.5rem;
         height: 2.9rem;
         background-size: contain;
     }
@@ -31,7 +28,7 @@
         width: 4.5rem;
         height: 3.3rem;
         background-size: contain;
-        margin-left: 5rem;
+        position: relative;
     }
 
     &__login {
@@ -40,15 +37,15 @@
         border: 1px solid $color-white;
         color: $color-white;
         font-size: 1.3rem;
-        text-align: center;
     }
 
     &__welcome {
-        width: 6.6rem;
+        width: auto;
+        padding-left: 1rem;
+        padding-right: 1rem;
         height: 2.7rem;
         border: 1px solid $color-grey-light;
         color: $color-grey;
         font-size: $font-size-14;
-        text-align: center;
     }
 }

@@ -1,11 +1,18 @@
-.flex-center {
+.flex {
+    &-center {
+        justify-content: center;
+    }
+    &-between {
+        justify-content: space-between;
+    }
+}
+[class*='flex-'] {
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 .bgr-img {
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 
@@ -14,21 +21,26 @@
         clear: both;
         background-color: #f7f6f7;
         height: auto;
-        padding-bottom: 4rem;
+        padding: 4rem 2.5rem;
     }
 
     &__white-box {
         clear: both;
         background-color: $color-white;
         height: auto;
-        padding-bottom: 4rem;
+        padding: 4rem 2.5rem;
     }
 }
 
-.position-center {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+.margin-auto {
+    &-left {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &-top {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
 }
 
 .clear {
@@ -43,33 +55,151 @@
     float: right;
 }
 
-.border-none {
-    border: none;
-}
-
 .margin {
     &_top {
-        margin-top: 1.5rem;
-    }
-    
-    &_bottom {
-        margin-bottom: 1.5rem;
-    }
-
-    &_left {
-        margin-left: 2rem;
+        margin-top: 4.5rem;
 
         &-none {
-            margin-left: 0;
+            margin-top: 0;
+        }
+        &-smallest {
+            margin-top: 0.5rem;
+        }
+        &-smaller {
+            margin-top: 2rem;
+        }
+        &-small {
+            margin-top: 2.5rem;
+        }
+        &-medium {
+            margin-top: 3.5rem;
+        }
+        &-big {
+            margin-top: 5rem;
         }
     }
+    &_bottom {
+        margin-bottom: 4.5rem;
 
-    &_right {
-        margin-right: 2.5rem;
+        &-smaller {
+            margin-bottom: 1.5rem;
+        }
+        &-small {
+            margin-bottom: 2.5rem;
+        }
+        &-medium {
+            margin-bottom: 3.5rem;
+        }
     }
+    &_left {
+        margin-left: 1rem;
 
-    &-side {
-        margin-left: 2.5rem;
-        margin-right: 2.5rem;
+        &-small {
+            margin-left: 0.5rem;
+        }
+        &-big {
+            margin-left: 1.5rem;
+        }
+        &-bigger {
+            margin-left: 2rem;
+        }
+        &-biggest {
+            margin-left: 4rem;
+        }
+    }
+    &_right {
+        margin-right: 1rem;
+
+        &-small {
+            margin-right: 0.5rem;
+        }
+        &-big {
+            margin-right: 1.5rem;
+        }
+        &-bigger {
+            margin-right: 2rem;
+        }
+        &-biggest {
+            margin-right: 2.5rem;
+        }
+    }
+}
+
+.padding {
+    &_top {
+        padding-top: 4.5rem;
+
+        &-smallest {
+            padding-top: 0.5rem;
+        }
+        &-smaller {
+            padding-top: 1rem;
+        }
+        &-small {
+            padding-top: 2rem;
+        }
+        &-medium {
+            padding-top: 3.5rem;
+        }
+        &-big {
+            padding-top: 10rem;
+        }
+    }
+    &_bottom {
+        padding-bottom: 4.5rem;
+
+        &-smallest {
+            padding-bottom: 0.5rem;
+        }
+        &-smaller {
+            padding-bottom: 1rem;
+        }
+        &-small {
+            padding-bottom: 1.5rem;
+        }
+        &-medium {
+            padding-bottom: 3.5rem;
+        }
+        &-big {
+            padding-bottom: 10rem;
+        }
+    }
+    &_left {
+        padding-left: 1rem;
+
+        &-none {
+            padding-left: 0;
+        }
+        &-small {
+            padding-left: 0.5rem;
+        }
+        &-big {
+            padding-left: 1.5rem;
+        }
+        &-bigger {
+            padding-left: 2rem;
+        }
+        &-biggest {
+            padding-left: 3.5rem;
+        }
+    }
+    &_right {
+        padding-right: 1rem;
+
+        &-none {
+            padding-right: 0;
+        }
+        &-small {
+            padding-right: 0.5rem;
+        }
+        &-big {
+            padding-right: 1.5rem;
+        }
+        &-bigger {
+            padding-right: 2rem;
+        }
+        &-biggest {
+            padding-right: 3.5rem;
+        }
     }
 }
