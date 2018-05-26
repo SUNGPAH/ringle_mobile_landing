@@ -144,9 +144,11 @@ body {
   font-family: 'NanumBarunGothic';
   font-size: 1.2rem;
   color: #fff;
-  height: 60%;
-  align-items: flex-end !important;
-  padding-bottom: 1rem; }
+  width: 100%;
+  height: calc(100% - 8rem);
+  align-items: flex-end;
+  padding-bottom: 1rem;
+  display: grid; }
 
 .text-purple-tutor {
   font-size: 1.4rem;
@@ -312,11 +314,12 @@ body {
   display: flex;
   top: 1rem; }
 
-.flex-center {
-  justify-content: center; }
-
-.flex-between {
-  justify-content: space-between; }
+.flex {
+  display: flex; }
+  .flex-center {
+    justify-content: center; }
+  .flex-between {
+    justify-content: space-between; }
 
 [class*='flex-'] {
   display: flex;
@@ -372,6 +375,8 @@ body {
 
 .margin_bottom {
   margin-bottom: 4.5rem; }
+  .margin_bottom-smallest {
+    margin-bottom: 0.5rem; }
   .margin_bottom-smaller {
     margin-bottom: 1.5rem; }
   .margin_bottom-small {
@@ -402,6 +407,8 @@ body {
     margin-right: 2rem; }
   .margin_right-biggest {
     margin-right: 2.5rem; }
+  .margin_right-percent {
+    margin-right: 4%; }
 
 .padding_top {
   padding-top: 4.5rem; }
@@ -414,6 +421,8 @@ body {
   .padding_top-medium {
     padding-top: 3.5rem; }
   .padding_top-big {
+    padding-top: 4rem; }
+  .padding_top-biggest {
     padding-top: 10rem; }
 
 .padding_bottom {
@@ -663,15 +672,15 @@ footer {
   background-color: #eaeaea; }
 
 .img-tutors {
-  height: auto;
+  width: 100%;
+  height: 26vw;
   display: inline-block;
   text-align: center; }
   .img-tutors-circle {
-    width: 9.5rem;
-    height: 9.5rem;
+    width: 30%;
+    height: 100%;
     border-radius: 100%;
-    background-color: #d8d8d8;
-    margin: 0 1rem 1rem 0; }
+    background-color: #d8d8d8; }
 
 .img-btn {
   width: 100%;
@@ -716,16 +725,14 @@ footer {
 
 .topic-book-box {
   width: 100%;
-  height: auto;
-  min-height: 22rem;
-  padding: 1rem 0; }
+  height: 60vw;
+  min-height: 20rem;
+  padding-top: 1rem; }
 
 .topic-book-size {
-  width: 15rem;
-  height: 20rem;
+  width: 48%;
+  height: 100%;
   position: relative;
-  margin-right: 2%;
-  margin-bottom: 2%;
   padding: 0 1rem; }
 
 .guide-step-1 {
@@ -751,6 +758,13 @@ footer {
   border-radius: 100%;
   width: 2.5rem;
   height: 2.5rem; }
+
+.guide-grid-box {
+  display: grid;
+  width: calc(100% - 5.5rem);
+  height: 24rem; }
+  .guide-grid-box .flex {
+    height: 8rem; }
 
 [class*='guide-step-'] {
   width: 100%;

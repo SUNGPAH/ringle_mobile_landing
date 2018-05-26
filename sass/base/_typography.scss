@@ -150,9 +150,11 @@
             font-family: 'NanumBarunGothic';
             font-size: $font-size-12;
             color: $color-white;
-            height: 60%;
-            align-items: flex-end !important;
+            width: 100%;
+            height: calc(100% - 8rem);
+            align-items: flex-end;
             padding-bottom: 1rem;
+            display: grid;
         }
     }
     &-purple-tutor {
