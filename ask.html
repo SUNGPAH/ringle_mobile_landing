@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <title>Ringle</title>
+</head>
+<body>
+    <header class="header-box flex-between">
+        <div class="left">
+            <img src="img/btn-back.png" srcset="img/btn-back@2x.png 2x, img/btn-back@3x.png 3x">
+        </div>
+        <div class="left text-terms-title text-center text-nowrap" style="width: calc(100% - 3rem); padding-right: 3rem;">이용 약관 및 개인정보 보호 정책</div>
+    </header>
+    <main>
+        <section class="main main__white-box">
+            <article class="margin_top-big">
+                <div class="main__sub-heading text-color-dark" style="line-height: 1.36;">상담 신청하기</div>
+                <div class="main__contents text-color-grey padding_top-smaller margin_bottom-smallest">
+                    여러분의 고민에 맞는<br>
+                    링글 사용법을 알려드릴게요
+                </div>
+            </article>
+        <form action="#">
+            <article class="margin_top-small margin_bottom-smallest">
+                <div class="text-left">
+                    <div class="ask-input-label">이름</div>
+                    <input type="text" id="name" class="ask-input-box ask-input-text margin_top-smallest" placeholder="이름을 입력해주세요">
+                </div>
+                <div class="text-left margin_top-smaller">
+                    <div class="ask-input-label">전화번호 (카카오톡ID)</div>
+                    <input type="text" id="phone" class="ask-input-box ask-input-text margin_top-smallest" placeholder="전화번호 또는 카카오톡 ID를 입력해주세요">
+                    <div class="text-color-red padding_top-smaller">* 해외거주 하시는 분들은 카카오톡 ID를 대신 적어주세요</div>
+                </div>
+                <div class="text-left margin_top-smaller">
+                    <div class="ask-input-label">이메일</div>
+                    <input type="text" id="email" class="ask-input-box ask-input-text margin_top-smallest" placeholder="이메일 주소를 입력해 주세요">
+                </div>
+                <div class="text-left margin_top-smaller">
+                    <div class="ask-input-label">직장 또는 학교명 (선택)</div>
+                    <input type="text" id="workplace" class="ask-input-box ask-input-text margin_top-smallest" placeholder="직장 또는 학교명을 입력해 주세요">
+                    <div class="text-color-red padding_top-smaller">* 제휴사 코드 확인용</div>
+                </div>
+            </article>
+            <article class="margin_top-small">
+                <div class="text-left">
+                    <div class="ask-input-label margin_bottom-smaller">어떤 프로그램에 대해 상담받기를 원하시나요?</div>
+                    <p class="margin_bottom-smaller">
+                        <input type="radio" id="program-conversation" name="ask-program" checked>
+                        <label for="program-conversation" class="ask-input-label font_weight padding_top-smallest">일대일 영어 (회화)</label>
+                    </p>
+                    <p class="margin_bottom-smaller">
+                        <input type="radio" id="program-correction" name="ask-program">
+                        <label for="program-correction" class="ask-input-label font_weight padding_top-smallest">영문서 교정 의뢰</label>
+                    </p>
+                    <p class="margin_bottom-smaller">
+                        <input type="radio" id="program-interview" name="ask-program">
+                        <label for="program-interview" class="ask-input-label font_weight padding_top-smallest">인터뷰</label>
+                    </p>
+                    <p class="margin_bottom-small">
+                        <input type="radio" id="program-essay" name="ask-program">
+                        <label for="program-essay" class="ask-input-label font_weight padding_top-smallest">대학 에세이</label>
+                    </p>
+                </div>
+                <div class="text-left margin_top-smallest">
+                    <div class="ask-input-label margin_bottom-smallest">상담 방법을 선택해 주세요</div>
+                    <p class="left margin_right-small padding_top-smaller" style="height: 5.7rem;">
+                        <input type="radio" id="contact-visiting" name="contact-us" checked>
+                        <label for="contact-visiting" class="ask-input-label font_weight padding_top-smallest">방문 상담</label>
+                    </p>
+                    <div class="left">
+                        <input type="text" class="ask-input-text ask-bottom-line" placeholder="상담 지역을 입력해 주세요">
+                        <div class="text-color-red padding_top-smaller">* 방문은 현재 서울/성남,판교 지역만 가능합니다</div>
+                    </div>
+                    <p class="margin_bottom-smaller clear">
+                        <input type="radio" id="contact-calling" name="contact-us">
+                        <label for="contact-calling" class="ask-input-label font_weight padding_top-smallest">전화 상담</label>
+                    </p>
+                    <p class="margin_bottom-smaller">
+                        <input type="radio" id="contact-kakaotalk" name="contact-us">
+                        <label for="contact-kakaotalk" class="ask-input-label font_weight padding_top-smallest">카카오톡 상담</label>
+                    </p>
+                </div>
+            </article>
+            <article class="padding_top-smaller text-left margin_bottom-small">
+                <div class="ask-input-label">영어에 대해 어떤 고민을 가지고 계신지 써주세요!</div>
+                <textarea id="consulting-problem" placeholder="자세히 써주셔도 좋습니다 :)"
+                class="ask-input-box ask-textarea ask-input-text margin_top-smallest"></textarea>
+            </article>
+            <article class="margin_bottom-small">
+                <div class="review-comment margin_bottom-none">
+                    감사합니다<br>
+                    적어주신 연락처로 링글팀에서 연락드리겠습니다
+                </div>
+                <input type="submit" value="제출하기" class="main__btn-contact btn-purple main__text-contact text-nowrap border-none">
+            </article>
+        </form>
+        </section>
+    </main>
+</body>
+</html>

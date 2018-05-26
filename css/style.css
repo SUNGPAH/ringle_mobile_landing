@@ -207,6 +207,9 @@ body {
 .text-line-through {
   text-decoration: line-through; }
 
+.text-decoration-none {
+  text-decoration: none; }
+
 .text-guide-purple {
   font-size: 1.6rem;
   font-weight: 600;
@@ -218,6 +221,11 @@ body {
   font-weight: 300;
   line-height: 1.38;
   color: #3e3e3e; }
+
+.text-terms-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #4d4d4d; }
 
 .badge-notification-right {
   width: 4rem;
@@ -274,6 +282,40 @@ body {
   color: #3e3e3e;
   font-size: 1.4rem; }
 
+.ask-input-text {
+  font-size: 1.4rem;
+  color: #272727; }
+
+.ask-input-label {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #272727; }
+
+.font_weight {
+  font-weight: 300 !important; }
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #dcdcdc;
+  opacity: 1;
+  /* Firefox */ }
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #dcdcdc; }
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #dcdcdc; }
+
+.list-style-none {
+  list-style-type: none; }
+
+.menu-list {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #272727; }
+
 .main__btn-more {
   font-size: 1.4rem;
   opacity: 0.7;
@@ -313,6 +355,50 @@ body {
   background-size: contain;
   display: flex;
   top: 1rem; }
+
+input[type="radio"]:checked, input[type="radio"]:not(:checked) {
+  position: absolute;
+  left: -9999px; }
+
+input[type="radio"]:checked + label,
+input[type="radio"]:not(:checked) + label {
+  position: relative;
+  padding-left: 3.1rem; }
+
+input[type="radio"]:checked + label::before,
+input[type="radio"]:not(:checked) + label::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 2.3rem;
+  height: 2.3rem;
+  border: 1px solid #cdcdcd;
+  border-radius: 100%;
+  background-color: #fff; }
+
+input[type="radio"]:checked + label::after,
+input[type="radio"]:not(:checked) + label::after {
+  content: '';
+  width: 1.3rem;
+  height: 1.3rem;
+  background: #785be7;
+  position: absolute;
+  left: 0.5rem;
+  top: 0.5rem;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+
+input[type="radio"]:not(:checked) + label::after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0); }
+
+input[type="radio"]:checked + label::after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1); }
 
 .flex {
   display: flex; }
@@ -375,6 +461,8 @@ body {
 
 .margin_bottom {
   margin-bottom: 4.5rem; }
+  .margin_bottom-none {
+    margin-bottom: 0; }
   .margin_bottom-smallest {
     margin-bottom: 0.5rem; }
   .margin_bottom-smaller {
@@ -412,6 +500,8 @@ body {
 
 .padding_top {
   padding-top: 4.5rem; }
+  .padding_top-none {
+    padding-top: 0; }
   .padding_top-smallest {
     padding-top: 0.5rem; }
   .padding_top-smaller {
@@ -522,7 +612,6 @@ footer {
   padding: 3rem 1.5rem;
   position: fixed;
   z-index: 5;
-  justify-content: space-between;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); }
   .header-box {
     width: 100%;
@@ -531,7 +620,6 @@ footer {
     border-bottom: 1px solid #dbdbdb;
     padding: 1rem 1.5rem;
     z-index: 5;
-    justify-content: space-between;
     position: fixed; }
   .header__menu {
     width: 7.5rem;
@@ -682,8 +770,8 @@ footer {
 .img-tutors {
   width: 100%;
   height: 26vw;
-  display: inline-block;
-  text-align: center; }
+  display: inline-flex;
+  justify-content: center; }
   .img-tutors-circle {
     width: 30%;
     height: 100%;
@@ -798,3 +886,43 @@ footer {
 
 .border-none {
   border: none !important; }
+
+.border-top {
+  border-top: 1px solid #e9e9e9; }
+
+.ask-input-box {
+  width: 100%;
+  height: 4.5rem;
+  border: 1px solid #dcdcdc;
+  padding: 1rem; }
+
+.ask-textarea {
+  height: 13rem;
+  resize: none; }
+
+.ask-bottom-line {
+  width: calc(100vw - 15rem);
+  height: 3.5rem;
+  border: none;
+  border-bottom: 1px solid #dcdcdc;
+  padding-left: 0.8rem; }
+
+input, textarea {
+  outline: none; }
+
+/* input[type='text'], textarea {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    outline: none;
+
+    &:hover,
+    &:focus {
+        box-shadow: 0 0 0.5rem rgba($color-purple, 1);
+        border: 1px solid rgba($color-purple, 1);
+    }
+} */
+.menu-list-box {
+  height: 5.1rem;
+  width: 100%; }

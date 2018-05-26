@@ -83,6 +83,9 @@
     &_bottom {
         margin-bottom: 4.5rem;
 
+        &-none {
+            margin-bottom: 0;
+        }
         &-smallest {
             margin-bottom: 0.5rem;
         }
@@ -140,6 +143,9 @@
     &_top {
         padding-top: 4.5rem;
 
+        &-none {
+            padding-top: 0;
+        }
         &-smallest {
             padding-top: 0.5rem;
         }

@@ -220,6 +220,9 @@
     &-line-through {
         text-decoration: line-through;
     }
+    &-decoration-none {
+        text-decoration: none;
+    }
     &-guide-purple {
         font-size: $font-size-16;
         font-weight: 600;
@@ -231,6 +234,11 @@
         font-weight: 300;
         line-height: 1.38;
         color: $color-tutor-grey;
+    }
+    &-terms-title {
+        font-size: $font-size-18;
+        font-weight: 600;
+        color: #4d4d4d;
     }
 }
 
@@ -299,4 +307,38 @@
     margin: 1rem 0;
     color: $color-tutor-grey;
     font-size: $font-size-14;
+}
+
+.ask-input {
+    &-text {
+        font-size: $font-size-14;
+        color: $color-grey-dark;
+    }
+    &-label {
+        font-size: $font-size-14;
+        font-weight: 500;
+        color: $color-grey-dark;
+    }
+}
+.font_weight {
+    font-weight: 300 !important;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: $color-ask;
+    opacity: 1; /* Firefox */
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: $color-ask;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: $color-ask;
+}
+.list-style-none {
+    list-style-type: none;
+}
+.menu-list {
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: $color-grey-dark;
 }
