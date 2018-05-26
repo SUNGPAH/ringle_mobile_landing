@@ -178,10 +178,18 @@
     }
 }
 
-.faq-hr {
-    height: 0.2rem;
-    margin: 1.5rem 0;
-    background-color: #eaeaea;
+.faq {
+    &-hr {
+        height: 0.2rem;
+        margin: 1.5rem 0;
+        background-color: $color-faq;
+    }
+}
+
+[class*='faq-box-'] {
+    height: auto;
+    padding: 2rem 2.5rem;
+    border-bottom: 1px solid $color-faq;
 }
 
 .img {

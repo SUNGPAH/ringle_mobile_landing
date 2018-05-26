@@ -468,6 +468,9 @@ body {
   .padding_right-biggest {
     padding-right: 3.5rem; }
 
+.display-none {
+  display: none; }
+
 footer {
   height: 41rem;
   text-align: left;
@@ -670,6 +673,11 @@ footer {
   height: 0.2rem;
   margin: 1.5rem 0;
   background-color: #eaeaea; }
+
+[class*='faq-box-'] {
+  height: auto;
+  padding: 2rem 2.5rem;
+  border-bottom: 1px solid #eaeaea; }
 
 .img-tutors {
   width: 100%;
