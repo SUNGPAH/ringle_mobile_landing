@@ -399,7 +399,9 @@ input, textarea {
     }
 } */
 
-.menu-list-box {
-    height: 5.1rem;
-    width: 100%;
+.menu {
+    &-list-box {
+        height: 5.1rem;
+        width: 100%;
+    }
 }
