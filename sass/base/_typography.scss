@@ -72,6 +72,7 @@
                 color: $color-black-light;
                 text-decoration: none;
                 font-size: $font-size-18;
+                margin-bottom: 1rem;
                 border-bottom: 2px solid transparent;
                 transition: border-bottom 0.2s;
             }
@@ -252,6 +253,24 @@
         font-weight: 600;
         color: #4d4d4d;
     }
+    &__partner--caption {
+        font-size: 1.9rem;
+        font-weight: 300;
+        line-height: 1.26;
+        color: $color-grey-dark;
+    }
+    &__title--biggest {
+        font-size: 3.3rem;
+        font-weight: 600;
+        line-height: 1.42;
+        color: $color-tutor-grey;
+    }
+    &__caption--small {
+        font-size: 1.5rem;
+        font-weight: 300;
+        line-height: 1.47;
+        color: $color-tutor-grey;
+    }
 }
 
 .badge-notification {
@@ -353,4 +372,11 @@
     font-size: 1.7rem;
     font-weight: 600;
     color: $color-grey-dark;
+}
+
+.ringle--title {
+    font-size: $font-size-16;
+    font-weight: 600;
+    line-height: 1.25;
+    color: $color-tutor-grey;
 }

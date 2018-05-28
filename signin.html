@@ -9,33 +9,17 @@
 </head>
 <body>
     <header class="header-box flex-between border-none">
-        <img src="img/btn-back.png" srcset="img/btn-back@2x.png 2x, img/btn-back@3x.png 3x">
+        <a href="#"><img src="img/btn-back.png" srcset="img/btn-back@2x.png 2x, img/btn-back@3x.png 3x"></a>
     </header>
     <main class="text-left">
         <form action="#">
-        <article class="main__white-box padding_bottom-none">
+        <article class="main__white-box padding_bottom-none display-grid" style="height: calc(100vh - 8.5rem); min-height: 61.5rem;">
             <div class="margin_top-medium margin_bottom-smallest">
                 <div class="ask-input-label">이름<span class="text-color-purple">*</span></div>
-                <input type="text" id="name-ko" class="ask-input-box ask-input-text margin_top-smallest margin_bottom-smallest" placeholder="이름을 한글로 입력해주세요" style="ime-mode: active;">
                 <input type="text" id="name-en" class="ask-input-box ask-input-text margin_top-smallest" placeholder="이름을 영어로 입력해주세요" style="ime-mode: disabled;">
             </div>
-            <div class="margin_top-smaller">
-                <div class="ask-input-label">이메일<span class="text-color-purple">*</span></div>
-                <input type="email" id="email" class="ask-input-box ask-input-text margin_top-smallest" placeholder="이메일을 입력해주세요">
-            </div>
-            <div class="margin_top-smaller">
-                <div class="ask-input-label">비밀번호<span class="text-color-purple">*</span></div>
-                <input type="password" id="password" class="ask-input-box ask-input-text margin_top-smallest" placeholder="6자이상 입력해주세요">
-            </div>
-            <div class="margin_top-smaller">
-                <div class="ask-input-label">비밀번호 재입력<span class="text-color-purple">*</span></div>
-                <input type="password" id="password-check" class="ask-input-box ask-input-text margin_top-smallest" placeholder="6자이상 입력해주세요">
-                <div class="text-color-red padding_top-smaller">비밀번호가 일치하지 않습니다</div>
-            </div>
-        </article>
-        <article class="main__white-box padding_bottom-none padding_top-none">
-            <div class="ask-input-label margin_top-small margin_bottom-smallest">추가 정보 입력 (선택)</div>
-            <hr class="margin_top-smallest" style="color: #e0e0e0;">
+            <div class="ask-input-label margin_top">추가 정보 입력 (선택)</div>
+            <hr class="margin_top-smallest" style="color: #e0e0e0; margin-top: 1rem;">
             <div class="margin_top-smaller">
                 <div class="ask-input-label">직업</div>
                 <select name="job" class="ask-input-box ask-input-text margin_top-smallest">
