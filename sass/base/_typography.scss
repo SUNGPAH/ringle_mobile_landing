@@ -101,6 +101,9 @@
         &-purple {
             color: $color-purple !important;
         }
+        &-purple-dark {
+            color: $color-purple-dark !important;
+        }
         &-white {
             color: $color-white !important;
         }
@@ -115,6 +118,15 @@
         }
         &-tutor {
             color: $color-tutor-grey !important;
+        }
+        &-black {
+            color: $color-black-light !important;
+        }
+        &-placeholder {
+            color: $color-ask !important;
+        }
+        &-blue {
+            color: $color-blue-dark !important;
         }
     }
     &-left {

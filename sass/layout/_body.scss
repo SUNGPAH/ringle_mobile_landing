@@ -79,6 +79,9 @@
         &-big {
             margin-top: 5rem;
         }
+        &-bigger {
+            margin-top: 7.5rem;
+        }
     }
     &_bottom {
         margin-bottom: 4.5rem;
@@ -97,6 +100,15 @@
         }
         &-medium {
             margin-bottom: 3.5rem;
+        }
+        &-big {
+            margin-bottom: 5rem;
+        }
+        &-bigger {
+            margin-bottom: 9rem;
+        }
+        &-biggest {
+            margin-bottom: 14.2rem;
         }
     }
     &_left {
@@ -230,6 +242,11 @@
     }
 }
 
-.display-none {
-    display: none;
+.display {
+    &-none {
+        display: none;
+    }
+    &-grid {
+        display: grid;
+    }
 }
