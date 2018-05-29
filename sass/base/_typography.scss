@@ -373,10 +373,23 @@
     font-weight: 600;
     color: $color-grey-dark;
 }
-
 .ringle--title {
     font-size: $font-size-16;
     font-weight: 600;
     line-height: 1.25;
     color: $color-tutor-grey;
+}
+.recommend {
+    &__title {
+        font-weight: 600;
+        border-right: 1px solid $color-review-grey;
+        padding-right: 1.2rem;
+    }
+    &__caption {
+        line-height: 1.31;
+    }
+}
+[class^='recommend__'] {
+    font-size: 1.3rem;
+    color: $color-grey-dark;
 }

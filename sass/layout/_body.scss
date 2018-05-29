@@ -114,6 +114,9 @@
     &_left {
         margin-left: 1.5rem;
 
+        &-none {
+            margin-left: 0;
+        }
         &-smaller {
             margin-left: 0.5rem;
         }
@@ -173,8 +176,11 @@
         &-big {
             padding-top: 4rem;
         }
+        &-bigger {
+            padding-top: 8rem;
+        }
         &-biggest {
-            padding-top: 10rem;
+            padding-top: 11rem;
         }
     }
     &_bottom {

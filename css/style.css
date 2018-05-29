@@ -358,6 +358,18 @@ main {
   line-height: 1.25;
   color: #3e3e3e; }
 
+.recommend__title {
+  font-weight: 600;
+  border-right: 1px solid #6a6a6a;
+  padding-right: 1.2rem; }
+
+.recommend__caption {
+  line-height: 1.31; }
+
+[class^='recommend__'] {
+  font-size: 1.3rem;
+  color: #272727; }
+
 .main__btn-more {
   font-size: 1.4rem;
   opacity: 0.7;
@@ -416,6 +428,31 @@ main {
   .btn__signup--submit {
     width: 100%;
     height: 5rem; }
+
+.btn--recommend {
+  width: 100%;
+  height: 6.5rem; }
+  .btn--recommend--round {
+    width: 9rem;
+    height: 3.2rem;
+    border-radius: 1.6rem;
+    border: 1px solid #dcdcdc;
+    background-color: #fff; }
+  .btn--recommend--rectangle {
+    width: calc(100% - 11.5rem);
+    min-width: 26rem;
+    height: 5rem;
+    border: 1px solid #dcdcdc;
+    font-size: 1.7rem;
+    margin: 1.2rem; }
+
+.btn--kakao {
+  background-color: #fae102;
+  color: #3b1e1e; }
+
+.btn--facebook {
+  background-color: #4266b2;
+  color: #fff; }
 
 .menu-btn {
   width: 48%;
@@ -495,6 +532,20 @@ input[type='checkbox'] {
     background: url("../img/check-box-unselect-nor.png"); }
   input[type='checkbox']:checked + label::before {
     background: url("../img/check-box-select-nor.png"); }
+
+.tab {
+  border-bottom: 1px solid #eaeaea; }
+
+[class*='tab--'] {
+  width: 50vw;
+  height: 4.1rem;
+  font-size: 1.6rem;
+  color: #4d4d4d;
+  border: none;
+  background-color: #fff; }
+  [class*='tab--']:active, [class*='tab--']::after, [class*='tab--']:focus {
+    color: #513ccd;
+    border-bottom: 2px solid #513ccd; }
 
 .flex {
   display: flex; }
@@ -578,6 +629,8 @@ input[type='checkbox'] {
 
 .margin_left {
   margin-left: 1.5rem; }
+  .margin_left-none {
+    margin-left: 0; }
   .margin_left-smaller {
     margin-left: 0.5rem; }
   .margin_left-small {
@@ -616,8 +669,10 @@ input[type='checkbox'] {
     padding-top: 3.5rem; }
   .padding_top-big {
     padding-top: 4rem; }
+  .padding_top-bigger {
+    padding-top: 8rem; }
   .padding_top-biggest {
-    padding-top: 10rem; }
+    padding-top: 11rem; }
 
 .padding_bottom {
   padding-bottom: 4.5rem; }
@@ -922,6 +977,11 @@ footer {
   height: 22.9rem;
   background-image: url(../img/img-main-ringle.png); }
 
+.img--recommend {
+  width: 100%;
+  height: 29.3rem;
+  background-image: url(../img/img-recom-mobile.jpg); }
+
 [class*='img-btn-']:last-child {
   margin-bottom: 1rem; }
 
@@ -1050,6 +1110,10 @@ input:focus {
 .input__img--lock {
   background: url(../img/ic-lock-login.png) no-repeat 1rem 50%; }
 
+input[type='button']:focus {
+  border: none;
+  border-bottom: 2px solid #513ccd; }
+
 .menu-list-box {
   height: 5.1rem;
   width: 100%; }
@@ -1071,3 +1135,14 @@ hr {
 .line--grey {
   width: 100%;
   border: 1px solid #dcdcdc; }
+
+.container--terms-grey {
+  background-color: #f2f2f2;
+  width: 100%;
+  padding: 2rem; }
+
+.container--terms-white {
+  background-color: #fff;
+  width: 100%;
+  padding: 2rem;
+  overflow: scroll; }
