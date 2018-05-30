@@ -478,7 +478,17 @@ hr {
         overflow: scroll;
     }
 }
-.ringle-package-row {
-    padding: 0 10%;
-    white-space: nowrap;
+.ringle-package {
+    &-row {
+        padding: 0 10%;
+        white-space: nowrap;
+    }
+    &-hr {
+        color: #d1d1d1;
+    }
+}
+
+.signup-hr {
+    width: calc(50% - 2.2rem);
+    color: #e9e9e9;
 }
