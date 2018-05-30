@@ -6,6 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <title>Ringle</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(e) {
+            $('.menu-list-box:first-child').click(function() {
+                $(this).parents('nav').children('ul').slideToggle('slow');
+                if($(this).children('div:first-child').hasClass('text-color-purple')) {
+                    $(this).children('div:first-child').removeClass('text-color-purple');
+                    $(this).children('.menu-more-open').removeClass('display-none');
+                    $(this).children('.menu-more-close').addClass('display-none');
+                } else {
+                    $(this).children('div:first-child').addClass('text-color-purple');
+                    $(this).children('.menu-more-open').addClass('display-none');
+                    $(this).children('.menu-more-close').removeClass('display-none');
+                }
+            });
+        });
+    </script>
 </head>
 <body>
     <header class="header-box flex-between border-none" style="position: relative;">
@@ -33,11 +50,11 @@
             <article class="clear">
                 <nav>
                     <div class="menu-list-box border-top padding_left-big padding_right-bigger flex-between margin_top-small">
-                        <div class="menu-list left text-color-purple">일대일 영어</div>
-                        <div class="right menu-list text-color-purple">&and;</div>
-                        <div class="right menu-list display-none">&or;</div>
+                        <div class="menu-list left">일대일 영어</div>
+                        <div class="right menu-more-open"></div>
+                        <div class="right menu-more-close display-none"></div>
                     </div>
-                    <ul class="padding_left-big padding_right-bigger text-left list-style-none">
+                    <ul class="padding_left-big padding_right-bigger text-left list-style-none display-none">
                         <li class="margin_top-smallest margin_bottom-smaller"><a href="#" class="review-comment text-decoration-none text-color-dark">What is Ringle?</a></li>
                         <li class="margin_top-smallest margin_bottom-smaller"><a href="#" class="review-comment text-decoration-none text-color-dark">튜터</a></li>
                         <li class="margin_top-smallest margin_bottom-smaller"><a href="#" class="review-comment text-decoration-none text-color-dark">토픽</a></li>
