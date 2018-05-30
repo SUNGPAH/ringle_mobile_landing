@@ -16,8 +16,10 @@
         <article class="main__white-box padding_bottom-none">
             <div class="margin_top-medium margin_bottom-smallest">
                 <div class="ask-input-label">이름<span class="text-color-purple">*</span></div>
-                <input type="text" id="name-ko" class="ask-input-box ask-input-text margin_top-smallest margin_bottom-smallest" placeholder="이름을 한글로 입력해주세요" style="ime-mode: active;">
-                <input type="text" id="name-en" class="ask-input-box ask-input-text margin_top-smallest" placeholder="이름을 영어로 입력해주세요" style="ime-mode: disabled;">
+                <span class="ask-input-text margin_top-smallest flex-center input__title--float">국문</span>
+                <input type="text" id="name-ko" class="ask-input-box ask-input-text input--padding margin_top-smallest margin_bottom-smallest" placeholder="이름을 한글로 입력해주세요" style="ime-mode: active;">
+                <span class="ask-input-text margin_top-smallest flex-center input__title--float">영문</span>
+                <input type="text" id="name-en" class="ask-input-box ask-input-text input--padding margin_top-smallest" placeholder="이름을 영어로 입력해주세요" style="ime-mode: disabled;">
             </div>
             <div class="margin_top-smaller">
                 <div class="ask-input-label">이메일<span class="text-color-purple">*</span></div>
@@ -38,8 +40,8 @@
             <hr style="color: #e0e0e0; margin-top: 1rem;">
             <div class="margin_top-smaller">
                 <div class="ask-input-label">직업</div>
-                <select name="job" class="ask-input-box ask-input-text margin_top-smallest">
-                    <option hidden class="text-color-placeholder">선택해주세요</option>
+                <select name="job" class="ask-input-box margin_top-smallest" style="font-size: 1.4rem;">
+                    <option disabled selected style="display: none;">선택해주세요</option>
                     <option value="일반인">일반인</option>
                     <option value="대학원생">대학원생</option>
                     <option value="대학생">대학생</option>

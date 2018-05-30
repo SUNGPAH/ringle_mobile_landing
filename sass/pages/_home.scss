@@ -426,6 +426,9 @@ input:focus {
             background: url(../img/ic-lock-login.png) no-repeat 1rem 50%;
         }
     }
+    &--padding {
+        padding-left: 4.5rem;
+    }
 }
 input[type='button']:focus {
     border: none;
@@ -473,4 +476,8 @@ hr {
         padding: 2rem;
         overflow: scroll;
     }
+}
+.ringle-package-row {
+    padding: 0 10%;
+    white-space: nowrap;
 }

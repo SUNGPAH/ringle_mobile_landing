@@ -16,14 +16,15 @@
         <article class="main__white-box padding_bottom-none display-grid" style="height: calc(100vh - 8.5rem); min-height: 61.5rem;">
             <div class="margin_top-medium margin_bottom-smallest">
                 <div class="ask-input-label">이름<span class="text-color-purple">*</span></div>
-                <input type="text" id="name-en" class="ask-input-box ask-input-text margin_top-smallest" placeholder="이름을 영어로 입력해주세요" style="ime-mode: disabled;">
+                <span class="ask-input-text margin_top-smallest flex-center input__title--float">영문</span>
+                <input type="text" id="name-en" class="ask-input-box ask-input-text margin_top-smallest input--padding" placeholder="이름을 영어로 입력해주세요" style="ime-mode: disabled;">
             </div>
             <div class="ask-input-label margin_top">추가 정보 입력 (선택)</div>
             <hr class="margin_top-smallest" style="color: #e0e0e0; margin-top: 1rem;">
             <div class="margin_top-smaller">
                 <div class="ask-input-label">직업</div>
                 <select name="job" class="ask-input-box ask-input-text margin_top-smallest">
-                    <option hidden class="text-color-placeholder">선택해주세요</option>
+                    <option disabled selected style="display: none;">선택해주세요</option>
                     <option value="일반인">일반인</option>
                     <option value="대학원생">대학원생</option>
                     <option value="대학생">대학생</option>
