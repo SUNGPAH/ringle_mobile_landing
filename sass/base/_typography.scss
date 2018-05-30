@@ -339,6 +339,14 @@
     color: $color-tutor-grey;
     font-size: $font-size-14;
 }
+[class*='ringle-package-row'] > [class='left']{
+    &:first-child {
+        width: 3.3rem;
+    }
+    &:last-child {
+        width: 4.7rem;
+    }
+}
 
 .ask-input {
     &-text {
@@ -392,4 +400,15 @@
 [class^='recommend__'] {
     font-size: 1.3rem;
     color: $color-grey-dark;
+}
+
+.input__title--float {
+    width: 4.5rem;
+    height: 4.5rem;
+    position: absolute;
+    color: #9f9f9f;
+}
+
+option:disabled {
+    color: $color-ask;
 }

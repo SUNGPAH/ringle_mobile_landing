@@ -318,6 +318,12 @@ main {
   color: #3e3e3e;
   font-size: 1.4rem; }
 
+[class*='ringle-package-row'] > [class='left']:first-child {
+  width: 3.3rem; }
+
+[class*='ringle-package-row'] > [class='left']:last-child {
+  width: 4.7rem; }
+
 .ask-input-text {
   font-size: 1.4rem;
   color: #272727; }
@@ -369,6 +375,15 @@ main {
 [class^='recommend__'] {
   font-size: 1.3rem;
   color: #272727; }
+
+.input__title--float {
+  width: 4.5rem;
+  height: 4.5rem;
+  position: absolute;
+  color: #9f9f9f; }
+
+option:disabled {
+  color: #dcdcdc; }
 
 .main__btn-more {
   font-size: 1.4rem;
@@ -1110,6 +1125,9 @@ input:focus {
 .input__img--lock {
   background: url(../img/ic-lock-login.png) no-repeat 1rem 50%; }
 
+.input--padding {
+  padding-left: 4.5rem; }
+
 input[type='button']:focus {
   border: none;
   border-bottom: 2px solid #513ccd; }
@@ -1146,3 +1164,7 @@ hr {
   width: 100%;
   padding: 2rem;
   overflow: scroll; }
+
+.ringle-package-row {
+  padding: 0 10%;
+  white-space: nowrap; }
