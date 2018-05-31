@@ -213,3 +213,9 @@ input[type='checkbox'] {
         border-bottom: 2px solid #513ccd;
     }
 }
+
+input[type='submit'], input[type='button'] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}

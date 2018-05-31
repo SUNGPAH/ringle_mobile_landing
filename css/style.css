@@ -567,6 +567,11 @@ input[type='checkbox'] {
     color: #513ccd;
     border-bottom: 2px solid #513ccd; }
 
+input[type='submit'], input[type='button'] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+
 .flex {
   display: flex; }
   .flex-center {
